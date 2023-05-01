@@ -10,13 +10,13 @@ import {
   View,
   ViewStyle,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const WINDOW_WIDTH = Dimensions.get('window').width;
 
 const logEnabled = false;
 
-type SkeletonPlaceholderProps = {
+export type SkeletonPlaceholderProps = {
   /**
    * Determines component's children.
    */
@@ -126,9 +126,6 @@ const SkeletonPlaceholder: React.FC<SkeletonPlaceholderProps> & {
 
   if (!layout?.width || !layout.height)
     return <View onLayout={(event) => setLayout(event.nativeEvent.layout)}>{placeholders}</View>;
-
-  // https://github.com/react-native-linear-gradient/react-native-linear-gradient/issues/358
-  // to make transparent gradient we need to use original color with alpha
 
   return (
     <MaskedView style={{height: layout.height, width: layout.width}} maskElement={placeholders}>

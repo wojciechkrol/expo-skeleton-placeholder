@@ -1,6 +1,6 @@
-## SkeletonPlaceholder
+## SkeletonPlaceholder (Expo)
 
-SkeletonPlaceholder is a React Native library to easily create an amazing loading effect with FlexBox.<br/>
+SkeletonPlaceholder is an Expo library to easily create an amazing loading effect with FlexBox.<br/>
 Android and iOS
 
 ![](https://user-images.githubusercontent.com/20586489/194037825-92efe72b-2e00-407d-8b18-ab949a85e1ea.mp4)
@@ -9,49 +9,8 @@ Android and iOS
 
 ### Installation
 
-> Note: This package requires **@react-native-masked-view/masked-view** and **react-native-linear-gradient**
-
-###### Step #1
-
-Using yarn:
-
 ```bash
-yarn add @react-native-masked-view/masked-view react-native-linear-gradient
-```
-
-Using npm:
-
-```bash
-npm install @react-native-masked-view/masked-view react-native-linear-gradient --save
-```
-
-If you are running a **react-native** version below 0.60:
-
-```bash
-react-native link @react-native-masked-view/masked-view react-native-linear-gradient
-```
-
-Otherwise:
-
-```bash
-cd ios
-pod install
-```
-
-&nbsp;&nbsp;
-
-###### Step #2
-
-Using yarn:
-
-```bash
-yarn add react-native-skeleton-placeholder
-```
-
-Using npm:
-
-```bash
-npm install react-native-skeleton-placeholder --save
+npx expo install @react-native-masked-view/masked-view expo-skeleton-placeholder@wojciechkrol/expo-skeleton-placeholder#master
 ```
 
 ### Usage
@@ -63,7 +22,7 @@ with **SkeletonPlacehoder.Item** 🆕
 ```javascript
 import React from 'react';
 import {View} from 'react-native';
-import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import SkeletonPlaceholder from 'expo-skeleton-placeholder';
 
 const App = () => {
   return (
@@ -85,7 +44,7 @@ or with **View**, **Text** or **Image**
 ```javascript
 import React from 'react';
 import {View} from 'react-native';
-import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import SkeletonPlaceholder from 'expo-skeleton-placeholder';
 
 const App = () => {
   return (

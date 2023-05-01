@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
-import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import SkeletonPlaceholder from 'expo-skeleton-placeholder';
 
 const ThirdExample = () => {
-  const renderView = (skeletonEnabled: boolean) => {
+  const renderView = (skeletonEnabled) => {
     return (
       <SkeletonPlaceholder borderRadius={4} enabled={skeletonEnabled}>
         <View style={styles.container}>

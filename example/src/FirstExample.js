@@ -1,5 +1,5 @@
 import React from 'react';
-import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import SkeletonPlaceholder from 'expo-skeleton-placeholder';
 
 const FirstExample = ({}) => (
   <SkeletonPlaceholder borderRadius={4}>
